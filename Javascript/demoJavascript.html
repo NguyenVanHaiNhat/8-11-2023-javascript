@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Onchange</title>
+</head>
+<body>
+<select id="My Id" onchange="do_something()">
+    <option value="Audi">Audi</option>
+    <option value="BWM">BWM</option>
+    <option value="Mercedes">Mercedes</option>
+    <option value="Volvo">Volvo</option>
+</select>
+<script>
+    function do_something() {
+        var selectedValue = document.getElementById("My Id").value;
+        alert(selectedValue);
+    }
+
+    // var selectedElement = document.getElementById("My Id");
+    // selectedElement.addEventListener("change", changeFunction);
+    // function changeFunction() {
+    //     var selectValue = document.getElementById("My Id").value;
+    //     alert(selectValue);
+    // }
+</script>
+</body>
+</html>
