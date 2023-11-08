@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Change</title>
+</head>
+<body>
+<p>select new name on the group</p>
+<select id="demo">
+    <option value="Nhật">Nhật</option>
+    <option value="Đạt">Đạt</option>
+    <option value="Bảo">Bảo</option>
+    <option value="Nhơn">Nhơn</option>
+</select>
+<script>
+    var selectElement = document.getElementById("demo");
+    selectElement.addEventListener("change", change);
+    function change(){
+        var selectValue = document.getElementById("demo").value;
+        alert(selectValue);
+    }
+
+</script>
+</body>
+</html>
